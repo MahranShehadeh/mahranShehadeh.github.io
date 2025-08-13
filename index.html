@@ -9,10 +9,7 @@
   <link rel="icon" href="favicon.ico" />
   <style>
     :root {
-      --bg: #0b0c10; --fg: #e5e7eb; --muted: #9ca3af; --accent: #22d3ee; --card: #111827; --link: #60a5fa;
-    }
-    @media (prefers-color-scheme: light) {
-      :root { --bg: #ffffff; --fg: #0b0c10; --muted: #6b7280; --card: #f3f4f6; --link: #2563eb; }
+      --bg: #ffffff; --fg: #000000; --muted: #4b5563; --accent: #22d3ee; --card: #f3f4f6; --link: #2563eb;
     }
     * { box-sizing: border-box; }
     html, body { height: 100%; }
@@ -28,9 +25,9 @@
     .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.15; margin: 0 0 12px; }
     .hero p { color: var(--muted); font-size: 1.05rem; margin: 0 0 24px; }
     .cta { display: inline-flex; gap: 12px; }
-    .btn { border: 1px solid transparent; background: var(--accent); color: #0b0c10; padding: 10px 16px; font-weight: 700; border-radius: 12px; }
+    .btn { border: 1px solid transparent; background: var(--accent); color: #000000; padding: 10px 16px; font-weight: 700; border-radius: 12px; }
     .btn.secondary { background: transparent; border-color: var(--muted); color: var(--fg); }
-    .card { background: linear-gradient(180deg, var(--card), color-mix(in oklab, var(--card), transparent 40%)); border: 1px solid color-mix(in oklab, var(--fg), transparent 85%); border-radius: 16px; padding: 20px; box-shadow: 0 10px 24px rgba(0,0,0,.10); }
+    .card { background: var(--card); border: 1px solid #d1d5db; border-radius: 16px; padding: 20px; box-shadow: 0 10px 24px rgba(0,0,0,.05); }
     .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
     .grid .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
     .grid .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
