@@ -41,6 +41,7 @@
     footer { padding: 40px 0; color: var(--muted); font-size: 0.95rem; }
     .social { display: flex; gap: 14px; flex-wrap: wrap; }
     @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } .about { grid-template-columns: 1fr; } nav { display:none; } }
+    .profile-photo { max-width: 250px; border-radius: 50%; margin-bottom: 20px; }
   </style>
 </head>
 <body>
@@ -50,13 +51,14 @@
       <nav>
         <a href="#about" class="active">About</a>
         <a href="#projects">Projects</a>
-        <a href="#pubs">Publications</a>
+        <a href="#photography">Photography</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <section class="hero">
       <div>
+        <img src="placeholder-photo.jpg" alt="Your photo here" class="profile-photo" />
         <h1>Hi, I’m <span style="color:var(--accent)">Shehadeh Mahran</span> — physicist • biophysicist • computational modeler.</h1>
         <p>
           I build sensitive single‑molecule fluorescence experiments and analysis pipelines that bridge physics, biology, and computation—boosting photon budgets with plasmonic structures and extracting kinetics directly from photon streams.
@@ -94,14 +96,13 @@
       </div>
     </section>
 
-    <section id="pubs" class="section">
-      <h2>Selected Publications & Collaborations</h2>
-      <div class="card">
-        <ul>
-          <li>Co‑author on multiple ATLAS Collaboration papers (LHC).</li>
-          <li>Manuscripts in preparation on plasmonic enhancement of smFRET and photon‑based transition path analysis.</li>
-          <li>Poster planned for Biophysical Society Meeting 2026 (Los Angeles).</li>
-        </ul>
+    <section id="photography" class="section">
+      <h2>Photography</h2>
+      <p>Beyond the lab, I have a passion for capturing moments through photography. Here’s a selection of my favorite shots.</p>
+      <div class="grid">
+        <article class="card"><img src="photo1.jpg" alt="Photography sample 1" style="width:100%" /></article>
+        <article class="card"><img src="photo2.jpg" alt="Photography sample 2" style="width:100%" /></article>
+        <article class="card"><img src="photo3.jpg" alt="Photography sample 3" style="width:100%" /></article>
       </div>
     </section>
 
