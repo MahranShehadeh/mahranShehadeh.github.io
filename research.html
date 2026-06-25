@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Mahran Shehadeh</title>
+  <meta name="description" content="Plasmon-enhanced single-molecule FRET, deep-learning photon analysis, and FDTD nanophotonics simulation." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script>(function(){try{var t=localStorage.getItem('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="dot"></span>Mahran Shehadeh</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" title="Toggle theme">🌙</button>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="about.html">About &amp; CV</a>
+        <a href="aspirations.html">Aspirations</a>
+        <a href="art.html">Art &amp; Photography</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section class="page-head reveal">
+      <p class="eyebrow">Research</p>
+      <h1>Watching single molecules, one photon at a time.</h1>
+      <p class="lead">
+        My work sits at the intersection of optics, nanofabrication, and machine learning. The goal:
+        push single‑molecule fluorescence into regimes — higher concentrations, faster dynamics, noisier data —
+        where it was never meant to work, and then make sense of what we see.
+      </p>
+    </section>
+
+    <section class="section reveal">
+      <h2>Research Highlights</h2>
+      <div class="grid">
+        <article class="card hover">
+          <h3>Plasmon‑Enhanced FRET</h3>
+          <p>Overcoming concentration barriers in single‑molecule fluorescence. I design gold nanoantennas (ZMWs / nanorods) that act as "amplifiers" for light, enhancing photon yield (~10×) and enabling microsecond temporal resolution.</p>
+          <div>
+            <span class="tag">Nanofabrication</span>
+            <span class="tag">Optics</span>
+          </div>
+        </article>
+
+        <article class="card hover">
+          <h3>Deep Learning Analysis</h3>
+          <p>Photon streams are noisy. I develop custom pipelines using LSTMs and Bayesian inference to robustly identify protein states from low‑SNR data, significantly outperforming standard HMMs.</p>
+          <div>
+            <span class="tag">Python / PyTorch</span>
+            <span class="tag">Bayesian Inference</span>
+          </div>
+        </article>
+
+        <article class="card hover">
+          <h3>FDTD &amp; Simulation</h3>
+          <p>Before building, I simulate. Using FDTD (Lumerical) and Boundary Element Methods, I model electromagnetic fields to optimize antenna geometries for maximum enhancement and minimal quenching.</p>
+          <div>
+            <span class="tag">FDTD</span>
+            <span class="tag">Maxwell Solvers</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>How it fits together</h2>
+      <div class="grid-2">
+        <article class="card">
+          <h3>① Design &amp; simulate</h3>
+          <p>Model the electromagnetic field around candidate nanoantenna geometries to predict enhancement, quenching, and field confinement — before committing to fabrication.</p>
+        </article>
+        <article class="card">
+          <h3>② Fabricate &amp; measure</h3>
+          <p>Build the optimized structures and run single‑molecule fluorescence / FRET experiments on custom optical setups, collecting photon‑resolved time traces.</p>
+        </article>
+        <article class="card">
+          <h3>③ Analyze with AI</h3>
+          <p>Feed low‑SNR photon streams through deep‑learning and Bayesian pipelines to extract conformational states and kinetics that classical methods miss.</p>
+        </article>
+        <article class="card">
+          <h3>④ Iterate</h3>
+          <p>Close the loop: what the data reveals feeds back into the next generation of antenna designs and analysis models.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>Publications</h2>
+      <p class="lead" style="margin-bottom:24px;">
+        Selected work. For the complete, up‑to‑date list see my
+        <a href="https://scholar.google.com/citations?hl=en&user=n7ZsIv4AAAAJ" target="_blank" rel="noopener">Google Scholar profile</a>.
+      </p>
+
+      <!-- ============================================================
+           TO ADD A PUBLICATION: copy one <article class="card pub"> … </article>
+           block below and edit the title, authors, venue, year, and link.
+           ============================================================ -->
+      <div class="pub-list">
+        <article class="card pub">
+          <h3>Publication title goes here</h3>
+          <p class="pub-meta">Authors, <em>Journal / Venue</em>, Year.</p>
+          <div>
+            <a href="#" target="_blank" rel="noopener">DOI / PDF</a>
+          </div>
+        </article>
+
+        <article class="card pub">
+          <h3>Another publication title</h3>
+          <p class="pub-meta">Authors, <em>Journal / Venue</em>, Year.</p>
+          <div>
+            <a href="#" target="_blank" rel="noopener">DOI / PDF</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <h2>Toolbox</h2>
+      <div>
+        <span class="tag accent">Single‑Molecule FRET</span>
+        <span class="tag accent">Plasmonics / ZMWs</span>
+        <span class="tag accent">Confocal Microscopy</span>
+        <span class="tag accent">Lumerical FDTD</span>
+        <span class="tag accent">Python / PyTorch</span>
+        <span class="tag accent">LSTMs</span>
+        <span class="tag accent">Bayesian Inference</span>
+        <span class="tag accent">Nanofabrication</span>
+        <span class="tag accent">Large‑dataset statistics</span>
+      </div>
+      <p style="margin-top:24px;">
+        <a href="MahranShehadeh_AcademicCV.pdf" class="btn" target="_blank" rel="noopener">Academic CV (PDF)</a>
+        <a href="about.html" class="btn secondary">More about me →</a>
+      </p>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Mahran Shehadeh · Built with Physics &amp; Code</div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

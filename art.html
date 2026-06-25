@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Art &amp; Photography — Mahran Shehadeh</title>
+  <meta name="description" content="Photography and visual work — capturing light outside the lab." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script>(function(){try{var t=localStorage.getItem('theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="dot"></span>Mahran Shehadeh</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" title="Toggle theme">🌙</button>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <nav id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="about.html">About &amp; CV</a>
+        <a href="aspirations.html">Aspirations</a>
+        <a href="art.html" class="active">Art &amp; Photography</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <section class="page-head reveal">
+      <p class="eyebrow">Art &amp; Photography</p>
+      <h1>Capturing light — the other way.</h1>
+      <p class="lead">
+        In the lab I chase single photons; off the clock I chase light of a different kind. Photography is how I slow
+        down, pay attention, and frame the world. Here's a selection of my favorite shots.
+      </p>
+    </section>
+
+    <section class="section reveal">
+      <div class="gallery">
+        <img src="photo1.jpg" alt="Photograph by Mahran Shehadeh" loading="lazy" />
+        <img src="photo2.jpg" alt="Photograph by Mahran Shehadeh" loading="lazy" />
+        <img src="photo3.jpg" alt="Photograph by Mahran Shehadeh" loading="lazy" />
+      </div>
+      <p style="margin-top:24px; color:var(--muted);">
+        More to come — I'm always adding new work. To swap or add photos, drop image files in this folder and add an
+        <code>&lt;img&gt;</code> tag here.
+      </p>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> Mahran Shehadeh · Built with Physics &amp; Code</div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
