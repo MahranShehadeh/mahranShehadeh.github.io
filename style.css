@@ -395,3 +395,33 @@ footer {
   margin-right: 8px;
   letter-spacing: 0.02em;
 }
+
+/* ---------- Vertical timeline ---------- */
+.timeline { position: relative; padding-left: 30px; }
+.timeline::before {
+  content: ''; position: absolute; left: 8px; top: 10px; bottom: 10px; width: 2px;
+  background: linear-gradient(to bottom, var(--accent), color-mix(in srgb, var(--accent) 15%, transparent));
+  border-radius: 2px;
+}
+.timeline .timeline-item { position: relative; margin-bottom: 30px; }
+.timeline .timeline-item:last-child { margin-bottom: 0; }
+.timeline .timeline-item::before {
+  content: ''; position: absolute; left: -26px; top: 7px;
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.timeline .timeline-note { color: var(--muted); font-size: 0.93rem; margin: 6px 0 0; }
+
+/* compact meta list (awards, talks) */
+.meta-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 13px; }
+.meta-list li { display: grid; grid-template-columns: 62px 1fr; gap: 14px; align-items: baseline; }
+.meta-list .yr {
+  font-family: var(--font-display); font-size: 1rem; color: var(--accent-deep);
+  letter-spacing: 0.02em;
+}
+.meta-list .what { font-size: 0.945rem; color: var(--muted); line-height: 1.55; }
+.meta-list .what strong { color: var(--fg); font-weight: 600; }
+@media (max-width: 520px) {
+  .meta-list li { grid-template-columns: 1fr; gap: 2px; }
+}

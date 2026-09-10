@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research — Mahran Shehadeh</title>
-  <meta name="description" content="Plasmon-enhanced single-molecule FRET, deep-learning photon analysis, and FDTD nanophotonics simulation." />
+  <meta name="description" content="Plasmon-enhanced single-molecule FRET, photon-stream analysis with HMMs and deep learning, FDTD nanophotonics, and publications." />
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0b0f14" />
@@ -18,7 +18,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Mahran Shehadeh" />
   <meta property="og:title" content="Research — Mahran Shehadeh" />
-  <meta property="og:description" content="Plasmon-enhanced single-molecule FRET, deep-learning photon analysis, and FDTD nanophotonics simulation." />
+  <meta property="og:description" content="Plasmon-enhanced single-molecule FRET, photon-stream analysis with HMMs and deep learning, FDTD nanophotonics, and publications." />
   <meta property="og:url" content="https://mahranshehadeh.github.io/research.html" />
   <meta property="og:image" content="https://mahranshehadeh.github.io/og-image.png" />
   <meta property="og:image:width" content="1200" />
@@ -26,7 +26,7 @@
   <meta property="og:image:alt" content="Mahran Shehadeh — Physicist &amp; Biophysicist" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Research — Mahran Shehadeh" />
-  <meta name="twitter:description" content="Plasmon-enhanced single-molecule FRET, deep-learning photon analysis, and FDTD nanophotonics simulation." />
+  <meta name="twitter:description" content="Plasmon-enhanced single-molecule FRET, photon-stream analysis with HMMs and deep learning, FDTD nanophotonics, and publications." />
   <meta name="twitter:image" content="https://mahranshehadeh.github.io/og-image.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,8 +38,8 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html"><span class="dot"></span>Mahran Shehadeh</a>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" title="Toggle theme">🌙</button>
-      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode" title="Toggle theme">&#127769;</button>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
       <nav id="site-nav">
         <a href="index.html">Home</a>
         <a href="research.html" class="active">Research</a>
@@ -57,7 +57,7 @@
       <h1>Watching single molecules, one photon at a time.</h1>
       <p class="lead">
         My work sits at the intersection of optics, nanofabrication, and machine learning. The goal:
-        push single‑molecule fluorescence into regimes — higher concentrations, faster dynamics, noisier data —
+        push single&#8209;molecule fluorescence into regimes &mdash; higher concentrations, faster dynamics, noisier data &mdash;
         where it was never meant to work, and then make sense of what we see.
       </p>
     </section>
@@ -66,8 +66,10 @@
       <h2>Research Highlights</h2>
       <div class="grid">
         <article class="card hover">
-          <h3>Plasmon‑Enhanced FRET</h3>
-          <p>Overcoming concentration barriers in single‑molecule fluorescence. I design gold nanoantennas (ZMWs / nanorods) that act as "amplifiers" for light, enhancing photon yield (~10×) and enabling microsecond temporal resolution.</p>
+          <h3>Plasmon&#8209;Enhanced FRET</h3>
+          <p>Overcoming concentration barriers in single&#8209;molecule fluorescence. I design and fabricate gold
+             nanostructures &mdash; nanoholes and bowtie nanoantennas &mdash; that act as &ldquo;amplifiers&rdquo; for light,
+             enhancing photon yield and reaching microsecond temporal resolution.</p>
           <div>
             <span class="tag">Nanofabrication</span>
             <span class="tag">Optics</span>
@@ -75,8 +77,9 @@
         </article>
 
         <article class="card hover">
-          <h3>Deep Learning Analysis</h3>
-          <p>Photon streams are noisy. I develop custom pipelines using LSTMs and Bayesian inference to robustly identify protein states from low‑SNR data, significantly outperforming standard HMMs.</p>
+          <h3>Photon&#8209;Stream Analysis</h3>
+          <p>Photon streams are noisy. I build custom pipelines combining Hidden Markov Models, LSTM deep learning,
+             and Bayesian inference to robustly identify protein states from low&#8209;SNR data.</p>
           <div>
             <span class="tag">Python / PyTorch</span>
             <span class="tag">Bayesian Inference</span>
@@ -85,7 +88,8 @@
 
         <article class="card hover">
           <h3>FDTD &amp; Simulation</h3>
-          <p>Before building, I simulate. Using FDTD (Lumerical) and Boundary Element Methods, I model electromagnetic fields to optimize antenna geometries for maximum enhancement and minimal quenching.</p>
+          <p>Before building, I simulate. Using FDTD and Boundary Element Methods, I model electromagnetic fields to
+             optimise antenna geometries for maximum near&#8209;field enhancement and minimal quenching.</p>
           <div>
             <span class="tag">FDTD</span>
             <span class="tag">Maxwell Solvers</span>
@@ -99,74 +103,101 @@
       <div class="grid-2">
         <article class="card">
           <h3><span class="step">01</span> Design &amp; simulate</h3>
-          <p>Model the electromagnetic field around candidate nanoantenna geometries to predict enhancement, quenching, and field confinement — before committing to fabrication.</p>
+          <p>Model the electromagnetic field around candidate nanoantenna geometries to predict enhancement,
+             quenching, and field confinement &mdash; before committing to fabrication.</p>
         </article>
         <article class="card">
           <h3><span class="step">02</span> Fabricate &amp; measure</h3>
-          <p>Build the optimized structures and run single‑molecule fluorescence / FRET experiments on custom optical setups, collecting photon‑resolved time traces.</p>
+          <p>Build the optimised structures by FIB and electron&#8209;beam lithography, verify by SEM, passivate the
+             surface, then run single&#8209;molecule FRET on custom optical setups.</p>
         </article>
         <article class="card">
-          <h3><span class="step">03</span> Analyze with AI</h3>
-          <p>Feed low‑SNR photon streams through deep‑learning and Bayesian pipelines to extract conformational states and kinetics that classical methods miss.</p>
+          <h3><span class="step">03</span> Analyse with AI</h3>
+          <p>Feed low&#8209;SNR photon streams through HMM, deep&#8209;learning, and Bayesian pipelines to extract
+             conformational states and kinetics that classical methods miss.</p>
         </article>
         <article class="card">
           <h3><span class="step">04</span> Iterate</h3>
-          <p>Close the loop: what the data reveals feeds back into the next generation of antenna designs and analysis models.</p>
+          <p>Close the loop: what the data reveals feeds back into the next generation of antenna designs and
+             analysis models.</p>
         </article>
       </div>
     </section>
 
     <section class="section reveal">
       <h2>Publications</h2>
-      <p class="lead" style="margin-bottom:24px;">
-        Selected work. For the complete, up‑to‑date list see my
-        <a href="https://scholar.google.com/citations?hl=en&user=n7ZsIv4AAAAJ" target="_blank" rel="noopener">Google Scholar profile</a>.
+      <p class="lead" style="margin-bottom:26px;">
+        For the complete, up&#8209;to&#8209;date list see my
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=n7ZsIv4AAAAJ" target="_blank" rel="noopener">Google&nbsp;Scholar profile</a>.
       </p>
 
-      <!-- ============================================================
-           TO ADD A PUBLICATION: copy one <article class="card pub"> … </article>
-           block below and edit the title, authors, venue, year, and link.
-           ============================================================ -->
       <div class="pub-list">
         <article class="card pub">
-          <h3>Publication title goes here</h3>
-          <p class="pub-meta">Authors, <em>Journal / Venue</em>, Year.</p>
-          <div>
-            <a href="#" target="_blank" rel="noopener">DOI / PDF</a>
-          </div>
+          <h3>Toward Understanding Structural Transitions and Dynamics in Proteins Using Plasmon&#8209;Enhanced Single&#8209;Molecule FRET</h3>
+          <p class="pub-meta">M. Shehadeh &amp; G. Haran. <em>Manuscript in preparation</em>, 2025.</p>
+          <div><span class="tag accent">In preparation</span></div>
         </article>
 
         <article class="card pub">
-          <h3>Another publication title</h3>
-          <p class="pub-meta">Authors, <em>Journal / Venue</em>, Year.</p>
-          <div>
-            <a href="#" target="_blank" rel="noopener">DOI / PDF</a>
-          </div>
+          <h3>Single&#8209;Molecule Insights into Allosteric Regulation of the Nuclear Receptor Protein RXR&alpha;</h3>
+          <p class="pub-meta">J. Jungwirth, S. Mondal, <strong>M. Shehadeh</strong>, G. Haran. <em>Biophysical Journal</em>, 2021.</p>
+          <div><a href="https://doi.org/10.1016/j.bpj.2020.11.970" target="_blank" rel="noopener">doi.org/10.1016/j.bpj.2020.11.970</a></div>
+        </article>
+
+        <article class="card pub">
+          <h3>Efficient Cationic Agents for Exfoliating Two&#8209;Dimensional Nickel Oxide Sheets</h3>
+          <p class="pub-meta">J. Zaffran, M. Nagli, <strong>M. Shehadeh</strong>, M. Caspary Toroker. <em>Theoretical Chemistry Accounts</em>, 137(1), 1&ndash;5, 2018.</p>
+          <div><a href="https://doi.org/10.1007/s00214-017-2175-y" target="_blank" rel="noopener">doi.org/10.1007/s00214-017-2175-y</a></div>
+        </article>
+
+        <article class="card pub">
+          <h3>Influence of Electrolyte Cations on Ni(Fe)OOH&#8209;Catalyzed Oxygen Evolution Reaction</h3>
+          <p class="pub-meta">J. Zaffran, M. B. Stevens, C. D. M. Trang, M. Nagli, <strong>M. Shehadeh</strong>, S. W. Boettcher, M. Caspary Toroker. <em>Chemistry of Materials</em>, 29(11), 4761&ndash;4767, 2017.</p>
+          <div><a href="https://doi.org/10.1021/acs.chemmater.7b00517" target="_blank" rel="noopener">doi.org/10.1021/acs.chemmater.7b00517</a></div>
+        </article>
+
+        <article class="card pub">
+          <h3>ATLAS Collaboration &mdash; consortium publications</h3>
+          <p class="pub-meta">CERN&ndash;LHC&ndash;ATLAS, 2019&ndash;2023.</p>
+          <div><a href="https://inspirehep.net/authors/1624629" target="_blank" rel="noopener">INSPIRE&#8209;HEP profile</a></div>
         </article>
       </div>
     </section>
 
     <section class="section reveal">
+      <h2>Talks, schools &amp; internships</h2>
+      <ul class="meta-list">
+        <li><span class="yr">2025</span><span class="what"><strong>Biophysical Society Annual Meeting</strong>, Los Angeles &mdash; &ldquo;Toward Understanding Structural Transitions and Dynamics in Proteins Using Plasmon&#8209;Enhanced Single&#8209;Molecule FRET&rdquo;</span></li>
+        <li><span class="yr">2024</span><span class="what"><strong>Weizmann AI Hub Internship</strong> &mdash; developed LSTM models for photon time&#8209;series analysis in single&#8209;molecule FRET experiments</span></li>
+        <li><span class="yr">2021</span><span class="what"><strong>Summer School on Surface Plasmons</strong>, Institute for the Science of Light, Paris&#8209;Saclay</span></li>
+      </ul>
+    </section>
+
+    <section class="section reveal">
       <h2>Toolbox</h2>
       <div>
-        <span class="tag accent">Single‑Molecule FRET</span>
-        <span class="tag accent">Plasmonics / ZMWs</span>
+        <span class="tag accent">Single&#8209;Molecule FRET</span>
+        <span class="tag accent">Plasmonics / Nanoantennas</span>
         <span class="tag accent">Confocal Microscopy</span>
-        <span class="tag accent">Lumerical FDTD</span>
-        <span class="tag accent">Python / PyTorch</span>
-        <span class="tag accent">LSTMs</span>
+        <span class="tag accent">Single&#8209;Photon Detection</span>
+        <span class="tag accent">FIB &amp; EBL</span>
+        <span class="tag accent">SEM</span>
+        <span class="tag accent">Atomic&#8209;Layer Deposition</span>
+        <span class="tag accent">FDTD &amp; BEM</span>
+        <span class="tag accent">Hidden Markov Models</span>
+        <span class="tag accent">LSTM / Deep Learning</span>
         <span class="tag accent">Bayesian Inference</span>
-        <span class="tag accent">Nanofabrication</span>
-        <span class="tag accent">Large‑dataset statistics</span>
+        <span class="tag accent">DFT (VASP, Quantum ESPRESSO)</span>
+        <span class="tag accent">Python &middot; MATLAB &middot; C/C++ &middot; ROOT</span>
       </div>
-      <p style="margin-top:24px;">
+      <p style="margin-top:28px;">
         <a href="MahranShehadeh_AcademicCV.pdf" class="btn" target="_blank" rel="noopener">Academic CV (PDF)</a>
-        <a href="about.html" class="btn secondary">More about me →</a>
+        <a href="about.html" class="btn secondary">More about me &rarr;</a>
       </p>
     </section>
 
     <footer>
-      <div>© <span id="y"></span> Mahran Shehadeh · Built with Physics &amp; Code</div>
+      <div>&copy; <span id="y"></span> Mahran Shehadeh &middot; Built with Physics &amp; Code</div>
     </footer>
   </div>
 
